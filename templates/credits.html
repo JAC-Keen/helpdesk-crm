@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>{{t}}</title>
+		<style>
+			body {
+				background-color:white;
+			}
+			.credits {
+				margin:10px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/emoji.css')}}" >
+		<script src="{{ url_for('static',filename='assets/twemoji.min.js')}}"></script>
+		<script src="{{ url_for('static',filename='assets/emoji.js')}}"></script>
+	</head>
+<body>
+	<a href="/"><h1>{{ h }}</h1></a>
+	<hr>
+	<h3>Sales Demo</h3>
+	<div class='credits'>
+		Helpdesk CRM App with MongoDB Connection<br>
+		Keen tracking for helpdesk tasks and completed, incompleted status checks with a persisted user id<br>
+	</div>
+	<hr>
+	<p>Powered with Keen</p>
+</body>
+</html>
